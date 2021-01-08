@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='css/background.css' rel='stylesheet' type='text/css'>
+    <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="images/logo48.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="images/logo128.png">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Advanced Settings | ApolloBot</title>
+</head>
+<body class="text-center">
+<div id='stars'></div>
+<div id='stars2'></div>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <a class="masthead-brand" href="/">
+                <img src="images/text.png" alt="logo">
+            </a>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="features.html">Features</a>
+                <a class="nav-link" href="screenshots.html">Screenshots</a>
+                <a class="nav-link active" href="advanced-settings.html">Advanced Settings</a>
+                <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </nav>
+        </div>
+    </header>
+    <main role="main" class="inner cover">
+        <h1 class="mt-5 mb-4">
+            Advanced Settings
+        </h1>
+        <p class="lead">
+            The advanced settings are accessible from the toggle in the top-right corner of the settings screen.
+            They are only intended to be changed if the extension stops working in case Instagram™ change their APIs.
+            Until the extension gets updated you are welcome to adjust the settings yourself in order to fix the issue.
+        </p>
+        <h5 class="mt-5 mb-4">
+            Step 1
+        </h5>
+        <p>
+            Open your Instagram™ profile and press F12 on your keyboard. On the new window which appeared make
+            sure the "Network" tab and "XHR" are selected. Write "query" in the search bar.
+        </p>
+        <img src="images/queryHashStep1.png" class="img-fluid mb-4 shadow-all-sides" alt="Step 1">
+        <h5 class="mt-5 mb-4">
+            Step 2
+        </h5>
+        <p>
+            Click "followers" on your profile while keeping the window from step 1 open.
+        </p>
+        <img src="images/queryHashStep2.png" class="img-fluid mb-4 shadow-all-sides" alt="Step 2">
+        <h5 class="mt-5 mb-4">
+            Step 3
+        </h5>
+        <p>
+            Click the new row which appeared in the window from step 1.
+        </p>
+        <img src="images/queryHashStep3.png" class="img-fluid mb-4 shadow-all-sides" alt="Step 3">
+        <h5 class="mt-5 mb-4">
+            Step 4
+        </h5>
+        <p>
+            Make sure the "Headers" tab is selected.
+        </p>
+        <img src="images/queryHashStep4.png" class="img-fluid mb-4 shadow-all-sides" alt="Step 4">
+        <h5 class="mt-5 mb-4">
+            Step 5
+        </h5>
+        <p>
+            Scroll to the bottom where you will see "x-ig-app-id" and "query_hash" parameters. Copy their values to the
+            "Application Id" and "Load Followers Query Hash" settings respectively. Repeat steps 2 to 5 for the "Load
+            Following Query Hash" setting by clicking "following" on your profile.
+        </p>
+        <img src="images/queryHashStep5.png" class="img-fluid mb-5 shadow-all-sides" alt="Step 5">
+    </main>
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>Made with <span style="color: red;">&#9829;</span> by Nikolay Chernev. &copy; 2020-2021 ApolloBot,
+                Bulgaria</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
