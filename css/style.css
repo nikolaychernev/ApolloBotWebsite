@@ -29,7 +29,7 @@ body {
 }
 
 .cover-container {
-    max-width: 50em;
+    max-width: 52em;
 }
 
 .masthead {
@@ -108,4 +108,8 @@ img {
 .card-img-top {
     font-size: 2em;
     margin-top: 0.4em;
+}
+
+.lead {
+    margin-bottom: 3rem;
 }
